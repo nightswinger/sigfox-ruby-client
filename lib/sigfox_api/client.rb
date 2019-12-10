@@ -20,8 +20,8 @@ module SigfoxApi
     include SigfoxApi::Tile
 
     def initialize(options = {})
-      @login = options[:login]
-      @password = options[:password]
+      @login = options[:login] || ENV['SIGFOX_API_LOGIN_ID']
+      @password = options[:password] || ENV['SIGFOX_API_PASSWORD']
     end
 
     private

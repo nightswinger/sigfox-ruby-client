@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'sigfox_api/version'
-require 'sigfox_api/client'
+require_relative 'sigfox_api/version'
+require_relative 'sigfox_api/client'
 
 module SigfoxApi
   # Your code goes here...
