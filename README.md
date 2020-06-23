@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'sigfox_api'
+
+client = SigfoxApi::Client.new(
+  login: 'SIGFOX_API_USER_LOGIN',
+  password: 'SIGFOX_API_USER_PASSWORD'
+)
+client.list_devices
+```
 
 ## Development
 
