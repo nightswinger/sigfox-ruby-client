@@ -10,6 +10,10 @@ module SigfoxApi
       request(method: :post, endpoint: '/v2/devices', params: params)
     end
 
+    def delete_device(device_id)
+      request(method: :delete, endpoint: "/v2/devices/#{device_id}")
+    end
+
     def disengage_seq_number(device_id)
       request(method: :post, endpoint: "/v2/devices/#{device_id}/disengage")
     end
